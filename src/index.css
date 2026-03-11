@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 20 10% 12%;
+
+    --card: 30 20% 99%;
+    --card-foreground: 20 10% 12%;
+
+    --popover: 30 20% 99%;
+    --popover-foreground: 20 10% 12%;
+
+    --primary: 16 60% 52%;
+    --primary-foreground: 30 25% 97%;
+
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 20 10% 25%;
+
+    --muted: 30 12% 94%;
+    --muted-foreground: 20 8% 48%;
+
+    --accent: 35 45% 88%;
+    --accent-foreground: 20 10% 18%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 16 60% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --category-tops: 16 60% 52%;
+    --category-bottoms: 220 50% 55%;
+    --category-shoes: 35 70% 50%;
+    --category-outerwear: 160 35% 42%;
+    --category-accessories: 280 40% 55%;
+
+    --shadow-card: 0 2px 12px -2px hsl(20 10% 12% / 0.06);
+    --shadow-card-hover: 0 8px 24px -4px hsl(20 10% 12% / 0.1);
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .category-badge-tops {
+    @apply bg-primary/15 text-primary;
+  }
+  .category-badge-bottoms {
+    background-color: hsl(var(--category-bottoms) / 0.15);
+    color: hsl(var(--category-bottoms));
+  }
+  .category-badge-shoes {
+    background-color: hsl(var(--category-shoes) / 0.15);
+    color: hsl(var(--category-shoes));
+  }
+  .category-badge-outerwear {
+    background-color: hsl(var(--category-outerwear) / 0.15);
+    color: hsl(var(--category-outerwear));
+  }
+  .category-badge-accessories {
+    background-color: hsl(var(--category-accessories) / 0.15);
+    color: hsl(var(--category-accessories));
+  }
+}
