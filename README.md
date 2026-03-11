@@ -65,4 +65,4 @@ npm run test
 
 ---
 
-*Developed by **Richelle Adarlo** *
+Developed by **Richelle Adarlo** <3
