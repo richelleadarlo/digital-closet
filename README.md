@@ -1,5 +1,7 @@
 # Welcome to Your Digital Closet! 
 
+![digital closet overview](public/pic.png)
+
 Hi there! Welcome to your very own **Digital Studio** — a cozy little corner of the internet where your wardrobe lives, breathes, and gets a whole lot more organized. Whether you're a fashion lover, a chronic over-packer, or someone who just wants to stop staring blankly at a full closet thinking "I have nothing to wear," this app is for you!
 
 ---
